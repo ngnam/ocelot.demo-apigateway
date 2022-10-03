@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2F11AD6D-384B-47B4-9399-B663B5612F07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocelot.demo", "src\ocelot.demo\Ocelot.demo.csproj", "{E321A8CA-3A69-41ED-B8E4-028F88C0BCAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Node1", "src\WebApplication1\Node1.csproj", "{E235A19C-8AFD-4F95-B94C-680C7CBE42C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6A3740A0-36D7-4989-B676-FDE0676792E5}"
+	ProjectSection(SolutionItems) = preProject
+		README.MD = README.MD
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTAuth.WebApi", "src\JWTAuth.WebApi\JWTAuth.WebApi.csproj", "{98076360-FDE7-4BB7-A276-D3623B7EBBC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Node2", "src\WebApplication2\Node2.csproj", "{CC38DE37-5514-40EB-8D44-E155A14B2274}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E321A8CA-3A69-41ED-B8E4-028F88C0BCAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E321A8CA-3A69-41ED-B8E4-028F88C0BCAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E321A8CA-3A69-41ED-B8E4-028F88C0BCAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E321A8CA-3A69-41ED-B8E4-028F88C0BCAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E235A19C-8AFD-4F95-B94C-680C7CBE42C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E235A19C-8AFD-4F95-B94C-680C7CBE42C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E235A19C-8AFD-4F95-B94C-680C7CBE42C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E235A19C-8AFD-4F95-B94C-680C7CBE42C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98076360-FDE7-4BB7-A276-D3623B7EBBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98076360-FDE7-4BB7-A276-D3623B7EBBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98076360-FDE7-4BB7-A276-D3623B7EBBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98076360-FDE7-4BB7-A276-D3623B7EBBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC38DE37-5514-40EB-8D44-E155A14B2274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC38DE37-5514-40EB-8D44-E155A14B2274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC38DE37-5514-40EB-8D44-E155A14B2274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC38DE37-5514-40EB-8D44-E155A14B2274}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E321A8CA-3A69-41ED-B8E4-028F88C0BCAE} = {2F11AD6D-384B-47B4-9399-B663B5612F07}
+		{E235A19C-8AFD-4F95-B94C-680C7CBE42C4} = {2F11AD6D-384B-47B4-9399-B663B5612F07}
+		{98076360-FDE7-4BB7-A276-D3623B7EBBC6} = {2F11AD6D-384B-47B4-9399-B663B5612F07}
+		{CC38DE37-5514-40EB-8D44-E155A14B2274} = {2F11AD6D-384B-47B4-9399-B663B5612F07}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BE94950-E2BE-4D3D-897C-09ABFBEED6FC}
+	EndGlobalSection
+EndGlobal
