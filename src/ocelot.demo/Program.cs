@@ -2,8 +2,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Ocelot.Cache.CacheManager;
+using Ocelot.Configuration;
+using Ocelot.demo;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Ocelot.ServiceDiscovery.Providers;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -38,9 +41,12 @@ builder.Services.AddAuthentication(option =>
     };
 });
 
+Func<IServiceProvider, DownstreamRoute, IServiceDiscoveryProvider, CustomLoadBalancer> loadBalancerFactoryFunc = (serviceProvider, Route, serviceDiscoveryProvider) => new CustomLoadBalancer(serviceDiscoveryProvider.Get);
+
 builder.Services
     .AddOcelot()
-    .AddCacheManager(settings => settings.WithDictionaryHandle());
+    .AddCacheManager(settings => settings.WithDictionaryHandle())
+    .AddCustomLoadBalancer(loadBalancerFactoryFunc);
 
 var app = builder.Build();
 

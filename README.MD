@@ -20,6 +20,7 @@ I will cover the following features of Ocelot API Gateway in this sample:
 2. Authentication (JWT Token-based authentication)
 3. Response Caching (Using Ocelot.Cache.CacheManager NuGet package)
 4. Rate limiting
+5. Custom Load Balancers
 
 ## More
 
